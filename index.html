@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS link-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pomodoro clock</title>
+  </head>
+  <body>
+    <div id="container">
+      <p id="work" class="label">Work</p>
+      <p id="break" class="label">Break</p>
+      <p id="cycles" class="label">Cycles</p>
+      <!--Work timer-->
+      <div id="work-timer" class="timer">
+        <div id="rounding">
+          <p id="w_minutes">0</p>
+          <p class="semicolon">:</p>
+          <p id="w_seconds">00</p>
+        </div>
+      </div>
+
+      <p id="counter" class="timer">0</p>
+
+      <!--Break timer-->
+      <div id="break-timer" class="timer">
+        <div id="rounding-two">
+          <p id="b_minutes">0</p>
+          <p class="semicolon">:</p>
+          <p id="b_seconds">00</p>
+        </div>
+      </div>
+
+      <div id="setting-time-one">
+        <button class="minus" id="work-minus-button">-</button>
+        <button class="plus" id="work-plus-button">+</button>
+      </div>
+      <div id="setting-time-two">
+        <button class="minus" id="break-minus-button">-</button>
+        <button class="plus" id="break-plus-button">+</button>
+      </div>
+      <button id="start" class="btn">Start</button>
+      <button id="stop" class="btn">Pause</button>
+      <button id="reset" class="btn">Reset</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
